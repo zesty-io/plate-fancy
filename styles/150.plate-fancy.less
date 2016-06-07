@@ -1,0 +1,335 @@
+// minimalist plate main less file
+
+/* minimalist z-container addtional css to add space around the website  */
+.z-container{ 
+	background:none;
+}
+
+/* minimalist header */
+.recipe-wrap{
+	padding:20px;
+}
+
+
+.header {
+	margin-top: @default-spacing*5;
+	//padding-bottom: @default-spacing;
+	min-height: 150px;
+	background: @accent-color;
+	text-align: center;
+	
+
+	.lead-in-title {
+		padding-top: @default-spacing*3;
+		font-family: amethysta;
+		font-size: 15px;
+		color: #9F9400;
+		//margin-left: 300px;
+		font-weight: 400;
+		letter-spacing:2px;
+	}
+	
+	a.logo {
+		margin-top: (@default-spacing*2.5);
+		float:left;
+		margin-left: 50px;
+		img { 
+			width: 100%;
+		}	
+		&:hover {
+			img {
+				.opacity(90);
+			}
+		}
+	}
+
+	.navigation {
+		clear:both;	
+		 ul#nav {
+			li {
+				a {
+					font-weight: 300;
+					text-transform: uppercase;
+				&.at {
+					background: #9f9400;
+					
+				}
+	
+				}
+			}
+		}
+	}
+	
+}
+
+/* minimalist content  */
+.content {
+	min-height: @default-spacing*20;
+	padding-bottom: 0;
+	background: @content-bg-color;
+
+
+	img[align=left]{
+		margin-right: @default-spacing / 5;
+		max-width: 50%;
+	}
+	
+	// bar break
+	.second-title{
+		margin-top:40px;
+		padding-bottom: @default-spacing;
+		font-family: amethysta;
+		font-size: 17px;
+		color: #2B3166;
+		//margin-left: 160px;
+		font-weight: 400;
+		letter-spacing:2px;
+		text-align:center;
+	
+	
+	}
+	
+	
+	.headline-break {
+		padding: -4px;
+		.border-radius(@default-border-radius);
+		margin: @default-spacing 0px;
+		clear: both;
+		
+		h4 {
+			margin: 0px;
+		}
+
+	}
+
+	/* horizontal rule */
+	hr{
+		border-top: none;	
+	}
+	
+}
+
+
+/* minimalist footer  */
+
+.squares {
+	text-align:center;
+
+	img {
+		width:75%;	
+	}
+	a {
+		position:relative;
+		bottom:20px;
+	}
+}
+
+.button {
+}
+
+.footer { 
+
+	color: @default-font-color;
+	padding: @default-spacing;
+	.border-radius(@default-border-radius);
+	text-align: center;
+	
+	ul#nav {
+		margin: 0px;
+		padding: 0px;
+		background: none;
+		background: none;
+		
+		
+		li {
+			margin-bottom: @default-spacing / 2;
+			list-style: none;
+			font-weight: 100;
+			&:hover{ 
+				background: none;
+				
+				
+			}
+			a {
+				text-decoration: none;
+				padding-left: 0px;
+				padding-right: @default-spacing;
+				padding: 0px @nav-link-padding-left 0px @nav-link-padding-right;
+				font-weight: 300;
+				text-transform: uppercase;
+				
+				&:hover{ 
+					background: none;
+					font-weight: 300;
+					color: #9F9400;
+				}
+				
+				
+			}
+		}
+		
+		ul {
+			display: none;
+		}
+	}
+}
+
+// minimalist clear
+
+.clear,.floatfix{ 
+	clear:both
+}
+
+// minimalist 404 page styling
+
+.page404 { 
+	
+	form{
+		input[type=text]{
+			width: 60%;
+		}
+		input[type=submit]{
+			display:block;
+			margin-top: 10px;
+		}
+	}
+}
+
+// minimalist copyright
+
+.copyright { 
+	clear: both; 
+	text-align: center; 
+	font-size: 10px; 
+	padding: (@default-spacing / 4) 0px (@default-spacing / 4) 0px; 
+}
+
+/********************************************
+	nivo slider overrides
+*********************************************/
+
+.nivo-caption {
+	position:absolute;
+	@media screen and (max-width:773px) { position:relative; }
+	right:0px;
+	top:0;
+	@media screen and (max-width:773px) { left:0; top:100%; }
+	background:darken(@body-bg-color,75%);
+	width:33%;
+	@media screen and (max-width:773px) { width:100%; }
+	z-index:8;
+	height:100%;
+	@media screen and (max-width:773px) { height:auto; }
+	padding: (@default-spacing/2);
+	@media screen and (max-width:620px) { padding: (@default-spacing/2); }
+	.border-radius(0);
+	opacity: 1;
+	overflow: hidden;
+	//display: none;
+	-moz-opacity: 1;
+	background: @btn-bg-color;
+	filter:alpha(opacity=10);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	@media screen and (max-width:640px) { display:none; }
+	text-align:center;
+	h2{
+		//display:none;
+		font-size: @h2-font-size;
+		margin-bottom:(@h2-font-size / 3);
+		padding: 0px;
+		color:@h2-font-color;
+		
+	}
+	span{
+		//display:none;
+		color: darken(@btn-font-color,10%);
+		padding-top: (@default-spacing/2);
+		line-height:@paragraph-line-height;
+		font-size:@h5-font-size;
+		
+		@media screen and (max-width:620px) {
+			display: none;
+		}
+	}
+	a span {
+		text-transform:uppercase;
+		color:lighten(#e5e2c7,30%);
+		font-size:17px;
+		opacity:0.9;
+		
+		&:hover {
+			opacity:1;
+		}
+		
+	}
+	
+}
+.nivo-html-caption {
+	background:  @btn-bg-color;
+	height:235px;
+}
+
+
+.nivo-prevNav,.nivo-nextNav {
+	display: none;	
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	display: none;
+	
+}
+.nivo-controlNav a {
+	position:relative;
+	
+	.transition(all 250ms ease);
+	cursor:pointer;
+	z-index:100;
+	bottom:40px;
+	right:30%;
+	text-indent: -9999px;
+	width: 20px;
+	background-color: @btn-bg-color;
+	height: 20px;
+	border-radius:50%;	
+	margin-right:5px;
+	
+	display: inline-block;
+	&:hover{
+		.transition(none);
+		background-color: lighten(@btn-bg-color,10%);
+	}	
+}
+
+.nivo-controlNav a.active {
+	background-color: @btn-font-color;
+}
+
+/********************************************
+	MIXIN OVERRIDES
+*********************************************/
+.addButtonStyles() {
+	text-shadow: 1px 1px 0px darken(@btn-bg-color,4%), -1px -1px 0px darken(@btn-bg-color,7%);
+	box-shadow: inset 0px 0px 4px lighten(@btn-bg-color,10%);
+	#gradient > .vertical(darken(@btn-bg-color,5%),@btn-bg-color);
+
+	&:hover{
+		text-shadow: 1px 1px 0px lighten(@btn-hover-bg-color,3%), inset -1px -1px 0px darken(@btn-hover-bg-color,5%);
+		box-shadow: inset 0px 0px 4px lighten(@btn-hover-bg-color,10%);
+		#gradient > .vertical(darken(@btn-hover-bg-color,5%),@btn-hover-bg-color);
+	}
+}
+
+.addSecondaryButtonStyles() {
+	text-shadow: 1px 1px 0px darken(@btn-secondary-bg-color,4%), -1px -1px 0px darken(@btn-secondary-bg-color,7%);
+	box-shadow: inset 0px 0px 4px lighten(@btn-secondary-bg-color,10%);
+	#gradient > .vertical(darken(@btn-secondary-bg-color,5%),@btn-secondary-bg-color);
+	
+	&:hover{
+		text-shadow: 1px 1px 0px lighten(@btn-secondary-hover-bg-color,3%), inset -1px -1px 0px darken(@btn-secondary-hover-bg-color,5%);
+		box-shadow: inset 0px 0px 4px lighten(@btn-secondary-hover-bg-color,10%);
+		#gradient > .vertical(darken(@btn-secondary-hover-bg-color,5%),@btn-secondary-hover-bg-color);
+	}
+}

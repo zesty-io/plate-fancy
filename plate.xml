@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<plate>
+	<head>
+		<doctype>html5</doctype>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+		<googlefont family="Lato"/>
+		<googlefont family="Amethysta"/>
+	</head>
+	<clippings>
+		<text name="site_name" name_friendly="Site Name"><![CDATA[Fancy is a Zesty Plate!]]></text>
+		<images name="logo" name_friendly="Site Logo" limit="1"><![CDATA[http://858130372798bcea7b40-17f1536cc3161b86cb2b2572ff9c26b6.r6.cf2.rackcdn.com/or-fancy-logo.png]]></images>
+		<text name="copyright" name_friendly="Copyright Text"><![CDATA[Copyright &#xA9;2013. All Rights Reserved]]></text>
+		<text name="about_header" name_friendly="The About Header in the footer"><![CDATA[About]]></text>
+		<textarea name="about_text" name_friendly="The About Text in the footer"><![CDATA[About the company&lt;br /&gt;]]></textarea>
+		<text name="google_publisher_id" name_friendly="Google Publisher ID"></text>
+	</clippings>
+	<ingredients>
+		<templateset name="homepage" name_friendly="Homepage" view="homepage">
+			<fields>
+				<text name="lead_in_title" name_friendly="Lead in Title" required="1"/>
+				<text name="slider_title" name_friendly="Slider title"/>
+				<textarea name="slider_info" name_friendly="Slider info"/>
+				<text name="second_title" name_friendly="Second Title"/>
+				<internal_link name="button_link" name_friendly="Button Link"/>
+			</fields>
+			<items>
+				<item link_title="Home" path_part="zesty_home">
+					<lead_in_title><![CDATA[Join us for a fresh dining experience today!]]></lead_in_title>
+					<slider_title><![CDATA[Start your meal with something great!]]></slider_title>
+					<slider_info><![CDATA[Our Fonduta combines fontina and gruyere cheeses with spinach. Even add jumbo lump crab meat for an extra something special. It’s bubbly, hot and served straight to your table from the oven.]]></slider_info>
+					<second_title><![CDATA[A modern culinary collective celebrating old-world luxuries.]]></second_title>
+					<button_link><![CDATA[501]]></button_link>
+				</item>
+			</items>
+		</templateset>
+	</ingredients>
+</plate>
